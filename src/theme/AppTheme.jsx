@@ -1,5 +1,6 @@
 import { ThemeProvider } from '@emotion/react';
 import { CssBaseline } from '@mui/material';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { theme } from './'; 
 // configuracion del tema principal  y la parametro children es el tema principal del app
 

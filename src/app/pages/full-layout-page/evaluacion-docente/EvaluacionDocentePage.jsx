@@ -1,6 +1,11 @@
+import { Typography } from '@mui/material';
 
 export const EvaluacionDocentePage = () => {
   return (
-    <div>EvaluacionDocentePage</div>
+    <>
+    <Typography variant='h1'>EvaluacionDocentePage</Typography>
+   
+    </>
+    
   )
 }
