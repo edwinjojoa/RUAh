@@ -5,7 +5,7 @@ import { AuthVistaGeneral } from '../layout/AuthVistaGeneral';
 
 export const LoginPage = () => {
   return (
-    <AuthVistaGeneral titulo='Login'>
+    <AuthVistaGeneral titulo='Inicio de sesión'>
       
 <form>
            <Grid container>
@@ -19,23 +19,30 @@ export const LoginPage = () => {
               </Grid>
 
                <Grid container spacing={ 2} sx= {{ mt: 2}} >
-                  <Grid item xs={8} sm={ 6 } >
-                    <Button variant='contained' fullWidth > Login </Button>
+                  <Grid item xs={12} sm={ 6 } >
+                  <div className="button-container">
+                      <button type="submit">
+                          <span>Iniciar Sesión</span>
+                      </button>
+                    </div>
+                    
                   </Grid>
 
-                  <Grid item xs={8} sm={ 6 } >
-                    <Button variant='contained' fullWidth >
-                      <Google/>
-                      <Typography sx={{ ml:1}}>Gooble</Typography>  
-                    </Button>
+                  <Grid item xs={12} sm={ 6 } >
+                  <div className="button-container">
+                      <button type="submit" >
+                      <span>Gooble</span>
+                      </button>
+                    </div>
+
                   </Grid>
                     
                   <Grid container direction='row' justifyContent='end'>
-                    <Link  color='inherit' to={"/auth/register"}>
-                      Crear una cuenta
+                    <Link  color='inherit' to={"/auth/recuperarclave"}>
+                    ¿Olvidaste tu contraseña?
                     </Link>
-                    
                   </Grid>
+                
                     
               </Grid>
            </Grid>
